@@ -35,3 +35,6 @@ C:\Users\Dario\source\repos\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcorea
 C:\Users\Dario\source\repos\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFreundeHorw.pdb
 C:\Users\Dario\source\repos\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFreundeHorw.genruntimeconfig.cache
 C:\Users\Dario\source\repos\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFreundeHorw.csproj.CopyComplete
+C:\Users\Dario\source\repos\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\Razor\Views\Members\Index.cshtml.g.cs
+C:\Users\Dario\source\repos\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\Razor\Views\Downloads\Index.cshtml.g.cs
+C:\Users\Dario\source\repos\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\Razor\Views\MemberShip\Index.cshtml.g.cs

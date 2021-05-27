@@ -1,35 +1,35 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - KegelFreundeHorw</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <link rel="stylesheet" href="~/css/navbar.css" />
+    <link rel="stylesheet" href="~/css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
     <header>
-        <nav class="bg-dark navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">KegelFreundeHorw</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Members" asp-action="Index">Mitglieder</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Downloads" asp-action="Index">Downloads</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Membership" asp-action="Index">Mitglied werden</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav>
+            <div id="logoAndBurger">
+                <a id="logo" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/logo.jpg" alt="">
+                </a>
+                <a href="javascript:void(0);" id="burger" onclick="myFunction()">
+                    <img src="~/img/burger.png" alt="">
+                </a>
             </div>
+            <div id="nav-items">
+                <a class="nav-item" asp-area="" asp-controller="Members" asp-action="Index">Mitglieder</a>
+                <a class="nav-item" asp-area="" asp-controller="Downloads" asp-action="Index">Downloads</a>
+                <a class="nav-item" asp-area="" asp-controller="Membership" asp-action="Index">Mitglied
+                    werden</a>
+            </div>
+
         </nav>
     </header>
     <div class="container">
@@ -40,12 +40,28 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - KegelFreundeHorw - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - KegelFreundeHorw - 
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Impressum</a>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Haftung</a>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Datenschutz</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav-items");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 </html>

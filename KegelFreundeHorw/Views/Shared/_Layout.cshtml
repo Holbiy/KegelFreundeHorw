@@ -13,11 +13,12 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <div id="logoAndBurger">
                 <a id="logo" asp-controller="Home" asp-action="Index">
-                    <img src="~/img/logo.jpg" alt="">
+                    <img src="~/img/logo.png" alt="">
                 </a>
                 <a href="javascript:void(0);" id="burger" onclick="myFunction()">
                     <img src="~/img/burger.png" alt="">
@@ -26,29 +27,36 @@
             <div id="nav-items">
                 <a class="nav-item" asp-area="" asp-controller="Members" asp-action="Index">Mitglieder</a>
                 <a class="nav-item" asp-area="" asp-controller="Downloads" asp-action="Index">Downloads</a>
-                <a class="nav-item" asp-area="" asp-controller="Membership" asp-action="Index">Mitglied
-                    werden</a>
+                <a class="nav-item" asp-area="" asp-controller="Contact" asp-action="Index">Kontakt</a>
             </div>
 
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+
+    <div id="main">
+        @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted">
+
+    <footer>
         <div class="container">
-            &copy; 2021 - KegelFreundeHorw - 
+            <p>&copy; 2021 - Kegel Freunde Horw (KFH)</p>
+            <p>-</p>
             <a asp-area="" asp-controller="Home" asp-action="Privacy">Impressum</a>
             <a asp-area="" asp-controller="Home" asp-action="Privacy">Haftung</a>
             <a asp-area="" asp-controller="Home" asp-action="Privacy">Datenschutz</a>
         </div>
     </footer>
+
+
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
     @RenderSection("Scripts", required: false)
 
 

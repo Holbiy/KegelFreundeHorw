@@ -1,0 +1,36 @@
+@model MailFormModel
+@{
+    ViewData["Title"] = "Mitglieder";
+}
+<link rel="stylesheet" href="~/css/form.css" />
+
+<div class="container">
+    <h1>Kontakt</h1>
+    <h2>Kontaktiere bei einem Anliegen unser Vorstand.</h2>
+</div>
+
+<div class="container">
+    <form asp-controller="Contact" asp-action="SendMail" method="post">
+        <label asp-for="Name"></label>
+        <input asp-for="Name">
+        <span asp-validation-for="Name"></span>
+
+        <label asp-for="Sender"></label>
+        <input asp-for="Sender">
+        <span asp-validation-for="Sender"></span>
+
+        <label asp-for="Subject"></label>
+        <input asp-for="Subject">
+        <span asp-validation-for="Subject"></span>
+
+        <label asp-for="Content"></label>
+        <textarea asp-for="Content"></textarea>
+        <span asp-validation-for="Content"></span>
+
+        <button type="submit">Senden</button>
+        <span>@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+              {
+                  @ViewBag.ErrorMessage;
+              }</span>
+    </form>
+</div>

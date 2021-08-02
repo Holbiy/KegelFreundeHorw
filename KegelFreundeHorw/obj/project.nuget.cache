@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "nreqCA3eDFtcVL5GdznEJDf4YLlvkLvdirMLZmn7Z5xVpwzKLla02Uos+Kxc1n7Dc1G41pvC8zHURkpiHzaQpw==",
+  "dgSpecHash": "KWDEapRJBwnEA0o/rnCW1RMXLM9LuHfKFNdJN4cYEkxAb0HeNO7EHQlyKTrFLFwLPolICYBOQEcDHJSvMS55OA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dario\\source\\repos\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dario\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dario\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Dario\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
+  ],
   "logs": []
 }

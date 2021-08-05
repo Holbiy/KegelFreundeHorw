@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace KegelFreundeHorw.Models{
-    public class MailFormModel{
+    public class MailViewModel{
         [StringLength(50, ErrorMessage = "Betreff darf maximal {1} Zeichen beinhalten.")]
         [Required(ErrorMessage = "Betreff muss angegeben werden.")]
         [Display(Name = "Betreff")]

@@ -26,7 +26,7 @@ namespace KegelFreundeHorw.Controllers
 			return View();
 		}
 
-		public IActionResult SendMail(MailFormModel model){
+		public IActionResult SendMail(MailViewModel model){
 			var fromAddress = new MailAddress(_configuration.GetValue<string>("Mail:Address"), model.Name);
 			var toAddress = new MailAddress(_configuration.GetValue<string>("Mail:Address"), "Kegel Freunde Horw");
 			string fromPassword = _configuration.GetValue<string>("Mail:Password");
@@ -58,7 +58,7 @@ namespace KegelFreundeHorw.Controllers
 				{
 					smtp.Send(message);
 				}
-				catch (Exception e)
+				catch (Exception)
 				{
 					ViewBag.ErrorMessage = "Mail konnte nicht versendet werden.";
 					return View("~/Views/Contact/Index.cshtml");
@@ -68,7 +68,7 @@ namespace KegelFreundeHorw.Controllers
 			return View("~/Views/Contact/Success.cshtml");
 		}
 
-		private string getContent(MailFormModel model)
+		private string getContent(MailViewModel model)
 		{
 			string body;
 			try
@@ -78,7 +78,7 @@ namespace KegelFreundeHorw.Controllers
 					body = reader.ReadToEnd();
 				}
 			}
-			catch (Exception e)
+			catch (Exception)
 			{
 				return null;
 			}

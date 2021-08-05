@@ -3,9 +3,10 @@
     ViewData["Title"] = "Mitglieder";
 }
 <link rel="stylesheet" href="~/css/form.css" />
+<link rel="stylesheet" href="~/css/gallery.css">
 
 <div class="container">
-    <h1>Gallerie</h1>
+    <h1>Galerie</h1>
     <h2>Bilder aus Trainings und weiteren Anlässen.</h2>
 </div>
 
@@ -18,12 +19,15 @@
 </form>
 
 
-@foreach (var item in Model.photoGraphyList)  
-{  
-<div class="col-sm-2">  
-    <a href="@Url.Content("~/photography/"+item.Name)" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">  
-        <img src="~/photography/@item.Name" asp-append-version="true" class="img-fluid mb-2" alt="white sample">  
-    </a>  
-    <a href="@Url.Action("DeletePhoto","Gallery",new { id=item.Id})" style="float:right">Delete</a>  
-</div>  
-}  
+<div id="gallery">
+    @foreach (var item in Model.photoGraphyList)  
+    {  
+        <div class="col-sm-2">  
+            @*<a href="@Url.Content("~/photography/"+item.Name)" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">*@  
+                <img src="~/photography/@item.Name" asp-append-version="true">  
+            @*</a>  
+            <a href="@Url.Action("DeletePhoto","Gallery",new { id=item.Id})" style="float:right">Delete</a>*@  
+        </div>  
+    }  
+</div>
+

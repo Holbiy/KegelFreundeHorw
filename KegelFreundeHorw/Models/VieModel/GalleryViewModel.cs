@@ -8,7 +8,7 @@ namespace KegelFreundeHorw.Models.VieModel
 {
     public class GalleryViewModel
     {
-        public Photography photoGraphy { get; set; }
-        public List<Photography> photoGraphyList { get; set; }
+        public Photography PhotoGraphy { get; set; }
+        public List<Photography> PhotoGraphyList { get; set; }
     }
 }

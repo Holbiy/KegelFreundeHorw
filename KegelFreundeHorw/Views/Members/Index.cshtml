@@ -1,8 +1,67 @@
+﻿@model KegelFreundeHorw.Models.VieModel.MemberViewModel
 @{
     ViewData["Title"] = "Mitglieder";
 }
+<link rel="stylesheet" href="~/css/form.css" />
+<link rel="stylesheet" href="~/css/members.css">
 
-<div class="text-center">
+<div class="container">
     <h1>Mitglieder</h1>
-    <h2>Alle Mitglieder des Vereins Kegel Freunde Horw.</h2>
+    <h2>Alle Mitglieder des Vereins Kegel Freunde Horw</h2>
+</div>
+
+@*<form asp-controller="Members" asp-action="AddMembers" method="post" enctype="multipart/form-data">
+
+    <label asp-for="@Model.Member.Name"></label>
+    <input asp-for="@Model.Member.Name">
+    <span asp-validation-for="Member.Name"></span>
+
+    <label asp-for="@Model.Member.Prename"></label>
+    <input asp-for="@Model.Member.Prename">
+    <span asp-validation-for="Member.Prename"></span>
+
+    <label asp-for="@Model.Member.BirthDate"></label>
+    <input value="2000-01-01" asp-for="@Model.Member.BirthDate" type="date">
+    <span asp-validation-for="Member.BirthDate"></span>
+
+    <label asp-for="@Model.Member.Description"></label>
+    <textarea asp-for="@Model.Member.Description"></textarea>
+    <span asp-validation-for="Member.Description"></span>
+
+    <label asp-for="@Model.Member.filePhoto" multiple="multiple"></label>
+    <input asp-for="@Model.Member.filePhoto" type="file">
+    <span asp-validation-for="Member.filePhoto"></span>
+
+    <button type="submit">Hinzufügen</button>
+</form>*@
+
+
+<div id="members">
+    @foreach (var item in Model.MemberList)
+    {
+        <div class="member">
+            <div class="img">
+                <img src="~/img/members/@item.ImageName" asp-append-version="true"/>
+            </div>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>@item.Name</td>
+                </tr>
+                <tr>
+                    <td>Vorname</td>
+                    <td>@item.Prename</td>
+                </tr>
+                <tr>
+                    <td>Geburtsdatum</td>
+                    <td>@item.BirthDate.ToString("MM/dd/yyyy")</td>
+                </tr>
+                <tr>
+                    <td>Über mich</td>
+                    <td>@item.Description</td>
+                </tr>
+            </table>
+            @*<a href="@Url.Action("DeleteMember","Members",new { id=item.Id})" style="float:right">Delete</a>*@
+        </div>
+    }
 </div>

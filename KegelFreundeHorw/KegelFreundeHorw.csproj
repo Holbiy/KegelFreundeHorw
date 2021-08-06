@@ -16,7 +16,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\photography\" />
+    <Folder Include="wwwroot\img\members\" />
+    <Folder Include="wwwroot\img\photography\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Members\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

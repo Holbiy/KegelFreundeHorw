@@ -1,33 +1,41 @@
 ﻿@model KegelFreundeHorw.Models.VieModel.GalleryViewModel
 @{
-    ViewData["Title"] = "Mitglieder";
+    ViewData["Title"] = "Galerie";
 }
-<link rel="stylesheet" href="~/css/form.css" />
+@*<link rel="stylesheet" href="~/css/form.css" />*@
 <link rel="stylesheet" href="~/css/gallery.css">
+<link rel="stylesheet" href="~/css/lightgallery.css">
 
 <div class="container">
     <h1>Galerie</h1>
     <h2>Bilder aus Trainings und weiteren Anlässen.</h2>
 </div>
 
-<form asp-controller="Gallery" asp-action="AddPhotos" method="post" enctype="multipart/form-data">
-<label asp-for="@Model.photoGraphy.filePhoto" multiple="multiple"></label>
-<input asp-for="@Model.photoGraphy.filePhoto" type="file">
-<span asp-validation-for="photoGraphy.filePhoto"></span>
-    
-<button type="submit">Hochladen</button>
-</form>
+@*<form asp-controller="Gallery" asp-action="AddPhotos" method="post" enctype="multipart/form-data">
+    <label asp-for="@Model.PhotoGraphy.filePhoto" multiple="multiple"></label>
+    <input asp-for="@Model.PhotoGraphy.filePhoto" type="file">
+    <span asp-validation-for="PhotoGraphy.filePhoto"></span>
+
+    <button type="submit">Hochladen</button>
+</form>*@
 
 
-<div id="gallery">
-    @foreach (var item in Model.photoGraphyList)  
-    {  
-        <div class="col-sm-2">  
-            @*<a href="@Url.Content("~/photography/"+item.Name)" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">*@  
-                <img src="~/photography/@item.Name" asp-append-version="true">  
-            @*</a>  
-            <a href="@Url.Action("DeletePhoto","Gallery",new { id=item.Id})" style="float:right">Delete</a>*@  
-        </div>  
-    }  
+<div id="lightgallery">
+    @foreach (var item in Model.PhotoGraphyList)
+    {
+        @*<a href="@Url.Content("~/photography/"+item.Name)" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">*@
+        <a href="~/img/photography/@item.Name">
+            <img src="~/img/photography/@item.Name" asp-append-version="true">
+        </a>
+        @*</a>
+            <a href="@Url.Action("DeletePhoto","Gallery",new { id=item.Id})" style="float:right">Delete</a>*@
+    }
 </div>
 
+<script src="js/lightgallery.umd.js"></script>
+
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        speed: 500
+    });
+</script>

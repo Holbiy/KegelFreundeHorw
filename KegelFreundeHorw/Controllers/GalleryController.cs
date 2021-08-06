@@ -19,18 +19,16 @@ namespace KegelFreundeHorw.Controllers
         public IActionResult Index()
         {
             var viewModel = new GalleryViewModel();
-            viewModel.photoGraphyList = _galleryRepository.GetAllPhotographies().ToList();
-            viewModel.photoGraphy = new Photography();
+            viewModel.PhotoGraphyList = _galleryRepository.GetAllPhotographies().ToList();
+            viewModel.PhotoGraphy = new Photography();
             return View(viewModel);
-
-            return View();
         }
         [HttpPost]
         public IActionResult AddPhotos(GalleryViewModel model)
         {
             if (!ModelState.IsValid)
                 return View("Index", model);
-            var Files = model.photoGraphy.filePhoto;
+            var Files = model.PhotoGraphy.filePhoto;
 
             if (Files.Count > 0)
             {
@@ -38,7 +36,7 @@ namespace KegelFreundeHorw.Controllers
                 {
                     var photography = new Photography();
                     var guid = Guid.NewGuid().ToString();
-                    var filePath = "wwwroot/photography/" + guid + item.FileName;
+                    var filePath = "wwwroot/img/photography/" + guid + item.FileName;
                     var fileName = guid + item.FileName;
                     using (var stream = System.IO.File.Create(filePath))
                     {

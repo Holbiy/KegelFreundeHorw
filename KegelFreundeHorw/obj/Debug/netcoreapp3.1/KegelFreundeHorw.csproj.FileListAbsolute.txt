@@ -132,3 +132,4 @@ C:\git\holbiy\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFre
 C:\git\holbiy\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFreundeHorw.genruntimeconfig.cache
 C:\git\holbiy\KegelFreundeHorw\KegelFreundeHorw\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\git\holbiy\KegelFreundeHorw\KegelFreundeHorw\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\git\holbiy\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\Razor\Views\AboutUs\Index.cshtml.g.cs

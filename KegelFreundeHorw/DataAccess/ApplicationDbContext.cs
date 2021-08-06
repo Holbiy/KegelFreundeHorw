@@ -3,6 +3,8 @@ using KegelFreundeHorw.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
+using KegelFreundeHorw.Models.Domain;
+
 namespace KegelFreundeHorw
 {
     public class ApplicationDbContext : IdentityDbContext
@@ -13,5 +15,6 @@ namespace KegelFreundeHorw
 
         }
         public virtual DbSet<Photography> PhotoGraphys { get; set; }
+        public virtual DbSet<Member> Members { get; set; }
     }
 }

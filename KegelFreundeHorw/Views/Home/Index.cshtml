@@ -1,8 +1,51 @@
-﻿@{
+﻿@using System.Collections.Specialized
+@{
     ViewData["Title"] = "Home";
 }
+<link rel="stylesheet" href="~/css/home.css">
 
-<div class="text-center">
-    <h1>Kegel Freunde Horw</h1>
-    <h2>Mehr gesoffen als getroffen!</h2>
+
+@section Title
+{
+    <div class="mainImage">
+
+    </div>
+    <div>
+        <h1>Kegel Freunde Horw</h1>
+        <h2>Mehr gesoffen als getroffen!</h2>
+    </div>
+
+
+}
+
+<div id="properties">
+    <div class="property">
+        <div class="icon">
+            <img src="img/icons/kegeln.png" />
+        </div>
+        <p>
+            Kegeln als Tradiotionssport
+        </p>
+    </div>
+
+    <div class="property">
+        <div class="icon">
+            <img src="img/icons/schweiz.png" />
+        </div>
+        <p>
+            Etablierter Kegelverein im Herzen der Schweiz
+        </p>
+    </div>
+
+    <div class="property">
+        <div class="icon">
+            <img src="img/icons/bier.png" />
+        </div>
+        <p>
+            Förderung der Gemeinschaft
+        </p>
+    </div>
+
 </div>
+
+

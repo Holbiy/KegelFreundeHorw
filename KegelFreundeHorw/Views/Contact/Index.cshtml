@@ -4,10 +4,14 @@
 }
 <link rel="stylesheet" href="~/css/form.css" />
 
-<div class="container">
-    <h1>Kontakt</h1>
-    <h2>Kontaktiere bei einem Anliegen unser Vorstand.</h2>
-</div>
+@section Title
+{
+    <div class="container">
+        <h1>Kontakt</h1>
+        <h2>Kontaktiere bei einem Anliegen unser Vorstand.</h2>
+    </div> 
+}
+
 
 <div class="container">
     <form asp-controller="Contact" asp-action="SendMail" method="post">

@@ -25,8 +25,6 @@ namespace KegelFreundeHorw
 			var connectionString = Configuration.GetConnectionString("DefaultConnection");
 			services.AddDbContext<ApplicationDbContext>(options =>
 				options.UseSqlServer(connectionString)
-					.EnableSensitiveDataLogging()
-					.EnableDetailedErrors()
 			);
 			services.AddScoped<IGalleryRepository, GalleryRepository>();
             services.AddScoped<IMemberRepository, MemberRepository>();

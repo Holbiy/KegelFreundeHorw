@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using KegelFreundeHorw.DataAccess;
 using KegelFreundeHorw.Models.Domain;
 using KegelFreundeHorw.Models.VieModel;
@@ -21,21 +19,20 @@ namespace KegelFreundeHorw.Controllers
         {
             var viewModel = new MemberViewModel();
             viewModel.MemberList = _memberRepository.GetAllMembers().ToList();
-            viewModel.Member = new Member();
             return View(viewModel);
         }
         [HttpPost]
-        public IActionResult AddMembers(MemberViewModel model)
+        public IActionResult AddMembers(Member model)
         {
             if (!ModelState.IsValid)
-                return View("Index", model);
-            var Files = model.Member.filePhoto;
+                return Redirect("Index");
+            var Files = model.filePhoto;
 
             if (Files.Count > 0)
             {
                 foreach (var item in Files)
                 {
-                    var member = model.Member;
+                    var member = model;
                     var guid = Guid.NewGuid().ToString();
                     var filePath = "wwwroot/img/members/" + guid + item.FileName;
                     var fileName = guid + item.FileName;
@@ -53,6 +50,11 @@ namespace KegelFreundeHorw.Controllers
 
 
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Add()
+        {
+	        return View();
         }
 
         public IActionResult DeleteMember(int id)

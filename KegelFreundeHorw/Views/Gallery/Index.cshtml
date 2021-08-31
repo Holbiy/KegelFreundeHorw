@@ -2,9 +2,10 @@
 @{
     ViewData["Title"] = "Galerie";
 }
-@*<link rel="stylesheet" href="~/css/form.css" />*@
+
 <link rel="stylesheet" href="~/css/gallery.css">
 <link rel="stylesheet" href="~/css/lightgallery.css">
+<link rel="stylesheet" href="~/css/form.css">
 
 @section Title
 {
@@ -14,20 +15,10 @@
     </div>
 }
 
-
-@*<form asp-controller="Gallery" asp-action="AddPhotos" method="post" enctype="multipart/form-data">
-    <label asp-for="@Model.PhotoGraphy.filePhoto" multiple="multiple"></label>
-    <input asp-for="@Model.PhotoGraphy.filePhoto" type="file">
-    <span asp-validation-for="PhotoGraphy.filePhoto"></span>
-
-    <button type="submit">Hochladen</button>
-</form>*@
-
-
 <div id="lightgallery">
     @foreach (var item in Model.PhotoGraphyList)
     {
-        @*<a href="@Url.Content("~/photography/"+item.Name)" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">*@
+        @*<a href="@Url.Content("~/photoGraphy/"+item.Name)" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">*@
         <a href="~/img/photography/@item.Name">
             <img src="~/img/photography/@item.Name" asp-append-version="true">
         </a>

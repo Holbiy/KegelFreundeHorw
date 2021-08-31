@@ -1,3 +1,4 @@
+using System;
 using KegelFreundeHorw.DataAccess;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -21,9 +22,12 @@ namespace KegelFreundeHorw
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllersWithViews();
-
+			var connectionString = Configuration.GetConnectionString("DefaultConnection");
 			services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+				options.UseSqlServer(connectionString)
+					.EnableSensitiveDataLogging()
+					.EnableDetailedErrors()
+			);
 			services.AddScoped<IGalleryRepository, GalleryRepository>();
             services.AddScoped<IMemberRepository, MemberRepository>();
 

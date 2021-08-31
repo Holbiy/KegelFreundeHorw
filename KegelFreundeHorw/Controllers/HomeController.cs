@@ -19,7 +19,7 @@ namespace KegelFreundeHorw.Controllers
 			return View();
 		}
 
-		public IActionResult Privacy()
+		public IActionResult Imprint()
 		{
 			return View();
 		}

@@ -3,12 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KegelFreundeHorw.Models.Domain;
 
 namespace KegelFreundeHorw.Models.VieModel
 {
     public class GalleryViewModel
     {
-        public Photography PhotoGraphy { get; set; }
-        public List<Photography> PhotoGraphyList { get; set; }
+	    public List<PhotoGraphy> PhotoGraphyList { get; set; }
     }
 }

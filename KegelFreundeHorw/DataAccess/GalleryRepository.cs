@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KegelFreundeHorw.Models.Domain;
 
 namespace KegelFreundeHorw.DataAccess
 {
@@ -15,9 +16,9 @@ namespace KegelFreundeHorw.DataAccess
             _context = context;
         }
 
-        public void AddPhotography(Photography photography)
+        public void AddPhotography(PhotoGraphy photoGraphy)
         {
-            _context.Add(photography);
+            _context.Add(photoGraphy);
             _context.SaveChanges();
         }
 
@@ -27,12 +28,12 @@ namespace KegelFreundeHorw.DataAccess
             _context.SaveChanges();
         }
 
-        public IEnumerable<Photography> GetAllPhotographies()
+        public IEnumerable<PhotoGraphy> GetAllPhotographies()
         {
             return _context.PhotoGraphys;
         }
 
-        public Photography GetPhotographyById(int id)
+        public PhotoGraphy GetPhotographyById(int id)
         {
             var photography = _context.PhotoGraphys.Find(id);
             if (photography != null)
@@ -40,11 +41,11 @@ namespace KegelFreundeHorw.DataAccess
             throw new Exception("Ein Foto mit der Id " + id + " existiert nicht.");
         }
 
-        public void UpdatePhotography(Photography newPhotography)
+        public void UpdatePhotography(PhotoGraphy newPhotoGraphy)
         {
-            var oldPhotography = GetPhotographyById(newPhotography.Id);
+            var oldPhotography = GetPhotographyById(newPhotoGraphy.Id);
 
-            oldPhotography = newPhotography;
+            oldPhotography = newPhotoGraphy;
             _context.SaveChanges();
         }
     }

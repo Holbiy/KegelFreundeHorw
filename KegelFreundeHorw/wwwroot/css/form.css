@@ -43,7 +43,7 @@ label {
     margin-top: 5px;
 }
 
-span {
+form span {
     display: block;
     width: 100%;
     color: red;

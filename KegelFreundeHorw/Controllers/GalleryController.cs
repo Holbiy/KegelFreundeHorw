@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using KegelFreundeHorw.DataAccess;
+using KegelFreundeHorw.Models.Domain;
 using KegelFreundeHorw.Models.VieModel;
 
 namespace KegelFreundeHorw.Controllers
@@ -20,21 +21,20 @@ namespace KegelFreundeHorw.Controllers
         {
             var viewModel = new GalleryViewModel();
             viewModel.PhotoGraphyList = _galleryRepository.GetAllPhotographies().ToList();
-            viewModel.PhotoGraphy = new Photography();
             return View(viewModel);
         }
         [HttpPost]
-        public IActionResult AddPhotos(GalleryViewModel model)
+        public IActionResult AddPhotos(PhotoGraphy model)
         {
             if (!ModelState.IsValid)
-                return View("Index", model);
-            var Files = model.PhotoGraphy.filePhoto;
+                return Redirect("Index");
+            var Files = model.filePhoto;
 
             if (Files.Count > 0)
             {
                 foreach (var item in Files)
                 {
-                    var photography = new Photography();
+                    var photography = new PhotoGraphy();
                     var guid = Guid.NewGuid().ToString();
                     var filePath = "wwwroot/img/photography/" + guid + item.FileName;
                     var fileName = guid + item.FileName;
@@ -53,6 +53,11 @@ namespace KegelFreundeHorw.Controllers
 
 
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Add()
+        {
+	        return View();
         }
 
         public IActionResult DeletePhoto(int id)

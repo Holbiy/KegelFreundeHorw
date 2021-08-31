@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Http;
 
-namespace KegelFreundeHorw.DataAccess
+namespace KegelFreundeHorw.Models.Domain
 {
-    public class Photography
+    public class PhotoGraphy
     {
         [Key]
         public int Id { get; set; }

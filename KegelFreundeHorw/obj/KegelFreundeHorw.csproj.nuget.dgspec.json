@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\holbiy\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj": {}
+    "C:\\git\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj": {}
   },
   "projects": {
-    "C:\\git\\holbiy\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj": {
+    "C:\\git\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\holbiy\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj",
+        "projectUniqueName": "C:\\git\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj",
         "projectName": "KegelFreundeHorw",
-        "projectPath": "C:\\git\\holbiy\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj",
-        "packagesPath": "C:\\Users\\adminl.u15375\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\holbiy\\KegelFreundeHorw\\KegelFreundeHorw\\obj\\",
+        "projectPath": "C:\\git\\KegelFreundeHorw\\KegelFreundeHorw\\KegelFreundeHorw.csproj",
+        "packagesPath": "C:\\Users\\Dario\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\KegelFreundeHorw\\KegelFreundeHorw\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adminl.u15375\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,27 +40,45 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.9, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
             }
           },
           "imports": [
@@ -73,6 +91,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.15, 3.1.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -81,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

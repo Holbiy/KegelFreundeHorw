@@ -1,1 +1,1 @@
-﻿delete from PhotoGraphys
+﻿select * from Members

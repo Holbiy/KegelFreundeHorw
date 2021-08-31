@@ -9,7 +9,6 @@ namespace KegelFreundeHorw.Models.VieModel
 {
     public class MemberViewModel
     {
-        public Member Member { get; set; }
-        public List<Member> MemberList { get; set; }
+	    public List<Member> MemberList { get; set; }
     }
 }

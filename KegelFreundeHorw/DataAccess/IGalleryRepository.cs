@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KegelFreundeHorw.Models.Domain;
 
 namespace KegelFreundeHorw.DataAccess
 {
     public interface IGalleryRepository
     {
-        IEnumerable<Photography> GetAllPhotographies();
+        IEnumerable<PhotoGraphy> GetAllPhotographies();
 
-        Photography GetPhotographyById(int id);
+        PhotoGraphy GetPhotographyById(int id);
 
         void DeletePhotography(int id);
 
-        void AddPhotography(Photography photo);
+        void AddPhotography(PhotoGraphy photo);
 
-        void UpdatePhotography(Photography photo);
+        void UpdatePhotography(PhotoGraphy photo);
 
     }
 }

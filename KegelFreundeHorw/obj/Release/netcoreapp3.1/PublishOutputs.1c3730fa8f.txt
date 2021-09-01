@@ -1,4 +1,5 @@
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\KegelFreundeHorw.exe
+C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\beercounter.css
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\footer.css
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\form.css
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\gallery.css
@@ -8,6 +9,7 @@ C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\ww
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\navbar.css
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\site.css
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\StyleSheet.css
+C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\StyleSheet1.css
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\favicon.ico
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\fonts\lg.svg
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\fonts\lg.ttf
@@ -44,14 +46,12 @@ C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Ke
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\KegelFreundeHorw.pdb
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\EntityFramework.SqlServer.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\EntityFramework.dll
-C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Humanizer.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.Design.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll

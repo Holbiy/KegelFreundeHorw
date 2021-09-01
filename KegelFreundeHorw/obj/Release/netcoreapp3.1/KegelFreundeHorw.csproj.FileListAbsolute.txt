@@ -102,3 +102,4 @@ C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\KegelFreundeH
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\KegelFreundeHorw.pdb
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\KegelFreundeHorw.genruntimeconfig.cache
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\KegelFreundeHorw.csprojAssemblyReference.cache
+C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Release\netcoreapp3.1\Razor\Views\BeerCounter\Index.cshtml.g.cs

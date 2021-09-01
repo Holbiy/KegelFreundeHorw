@@ -1,8 +1,10 @@
-﻿@using System.Collections.Specialized
+﻿@model KegelFreundeHorw.Models.Domain.Stats
 @{
     ViewData["Title"] = "Home";
 }
 <link rel="stylesheet" href="~/css/home.css">
+<link rel="stylesheet" href="~/css/beercounter.css">
+
 
 
 @section Title
@@ -44,6 +46,11 @@
         <p>
             Förderung der Gemeinschaft
         </p>
+    </div>
+    
+    <div class="beerCounter">
+        <span class="number">@Model.Value</span>
+        <span class="text">Biere bereits getrunken!</span>
     </div>
 
 </div>

@@ -1,0 +1,18 @@
+﻿@model KegelFreundeHorw.Models.Domain.Stats
+@{
+    ViewData["Title"] = "Bier-Counter";
+}
+<link rel="stylesheet" href="~/css/beercounter.css">
+
+@section Title
+{
+    <div class="container">
+        <h1>Bier-Counter</h1>
+        <h2>Für jedes Bier gibt es einen Punkt!</h2>
+    </div>
+}
+<div class="beerCounter">
+    <span class="number">@Model.Value</span>
+    <span class="text">Biere bereits getrunken!</span>
+</div>
+<a class="beerButton" asp-action="Increment" asp-controller="BeerCounter">+1 Bier</a>

@@ -236,3 +236,4 @@ C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFreundeHor
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFreundeHorw.dll
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFreundeHorw.pdb
 C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\KegelFreundeHorw.genruntimeconfig.cache
+C:\git\KegelFreundeHorw\KegelFreundeHorw\obj\Debug\netcoreapp3.1\Razor\Views\BeerCounter\Index.cshtml.g.cs

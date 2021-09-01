@@ -28,6 +28,7 @@ namespace KegelFreundeHorw
 			);
 			services.AddScoped<IGalleryRepository, GalleryRepository>();
             services.AddScoped<IMemberRepository, MemberRepository>();
+            services.AddScoped<IStatsRepository, StatsRepository>();
 
 			services.AddControllersWithViews();
 			services.AddRazorPages();

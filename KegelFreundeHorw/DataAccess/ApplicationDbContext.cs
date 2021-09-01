@@ -16,5 +16,6 @@ namespace KegelFreundeHorw
         }
         public virtual DbSet<PhotoGraphy> PhotoGraphys { get; set; }
         public virtual DbSet<Member> Members { get; set; }
+        public virtual DbSet<Stats> Stats { get; set; }
     }
 }
